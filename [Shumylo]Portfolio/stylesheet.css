@@ -1,8 +1,13 @@
 .navbar {
   display: flex;
+  background-color: #ccc;
+}
+a {
+  flex-direction: column;
 }
 
 h1 {
   display: flex;
   justify-content: center;
 }
+@media
