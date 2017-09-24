@@ -4,6 +4,7 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .nav li {
   font-size: 1.2em;
@@ -24,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   background: #ccc
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav a:hover {
@@ -40,7 +42,6 @@ a {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
@@ -48,6 +49,24 @@ h1 {
   font-family: 'Droid Sans', sans-serif;
   display: flex;
   justify-content: center;
+}
+
+.img-container {
+  padding: .5vw;
+  font-size: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.img-container div {
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+
+.img-container div img {
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {
@@ -74,4 +93,9 @@ h1 {
   .nav ul {
     justify-content: flex-end;
   }
+}
+
+@media screen and (max-width: 400px) {
+  header div {margin: 0;}
+  header {padding: 0;}
 }
