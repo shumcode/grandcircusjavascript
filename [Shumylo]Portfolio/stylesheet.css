@@ -50,11 +50,6 @@ h1 {
   justify-content: center;
 }
 
-.welcome {
-  
-}
-
-
 @media (min-width: 768px) {
   .nav ul {
     display: flex;
@@ -62,5 +57,21 @@ h1 {
   }
   p {
     font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .header-container h1 {
+    order: 2;
+  }
+  .nav {
+    order: 1;
+  }
+  .nav ul {
+    justify-content: flex-end;
   }
 }
