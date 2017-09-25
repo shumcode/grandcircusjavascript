@@ -24,8 +24,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #ccc
-  font-family: 'Raleway', sans-serif;
 }
 
 .nav a:hover {
@@ -43,6 +41,7 @@ a {
 
 p {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -52,21 +51,69 @@ h1 {
 }
 
 .img-container {
-  padding: .5vw;
+  padding: .5vw
   font-size: 0;
-  display: flex;
   flex-flow: row wrap;
+  display: flex;
 }
 
 .img-container div {
   flex: auto;
   width: 200px;
-  margin: .5vw;
+  height: 100%;
+  margin: .75vw;
+  box-shadow: 7.5px 7.5px 7.5px #888888;
+  border-radius: 20px;
 }
 
 .img-container div img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
+}
+
+img {
+  display: block;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: inset;
+  max-width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: flex;
+  margin-top: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+input, textarea {
+  width:75%;
+  height:27px;
+  background:#efefef;
+  border:1px solid #dedede;
+  padding:10px;
+  margin-top: 3px;
+  font-size:0.9em;
+  color:#3a3a3a;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea {
+  height: 213px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #97d6eb;
 }
 
 @media (min-width: 768px) {
