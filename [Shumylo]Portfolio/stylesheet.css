@@ -1,6 +1,6 @@
 .nav ul {
   list-style: none;
-  background-color: #444;
+  background-color: lightblue;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -8,11 +8,12 @@
 }
 .nav li {
   font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav a {
   text-decoration: none;
-  color: #fff;
+  color: orange;
   display: block;
   padding: 10px;
 }
@@ -116,6 +117,10 @@ input:focus, textarea:focus {
   border: 1px solid #97d6eb;
 }
 
+footer {
+  justify-content: flex-end;
+}
+
 @media (min-width: 768px) {
   .nav ul {
     display: flex;
@@ -143,6 +148,10 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 400px) {
-  header div {margin: 0;}
-  header {padding: 0;}
+  header div {
+    margin: 0;
+  }
+  header {
+    padding: 0;
+  }
 }
