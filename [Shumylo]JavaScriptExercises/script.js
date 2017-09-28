@@ -1,8 +1,7 @@
-var person = prompt("Enter a Number");
+var input = prompt("Enter any number!");
+var sum = 0;
 
-if (person != null) {
-  sum = 0;
-  for (i = 1; i <= 100; i++) {
-    sum = sum + i
-  }
+for (var i = 1; i <= input; i++) {
+  sum += i;
 }
+ console.log(sum);
