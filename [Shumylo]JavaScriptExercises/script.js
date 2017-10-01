@@ -51,3 +51,19 @@ while (printagain === "yes") {
   console.log(entername += "!");
   var printagain = prompt('Would you like to print this again?');
 }
+
+//Exercise 4
+
+var timeofday = prompt("What time of day is it?", "morning, noon, or evening");
+
+if (timeofday === "morning") {
+  console.log("Since it is morning, you should be eating breakfast. We suggest eggs and toast.");
+}
+
+if (timeofday === "noon") {
+  console.log("Since it is noon, you should be eating lunch. We suggest a salad.");
+}
+
+if (timeofday === "evening") {
+  console.log("Since it is evening, you should be eating dinner.  We suggest chicken and rice.");
+}
