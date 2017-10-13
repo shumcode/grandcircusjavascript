@@ -42,14 +42,13 @@ if (nameprint === "yes") {
   var entername = prompt('Enter your name.');
 }
 
-if (entername != "") {
+if (nameprint === "yes") {
   console.log(entername);
   var printagain = prompt('Would you like to print this again?');
-}
-
-while (printagain === "yes") {
-  console.log(entername += "!");
-  var printagain = prompt('Would you like to print this again?');
+  while (printagain === "yes") {
+    console.log(entername += "!");
+    var printagain = prompt('Would you like to print this again?');
+  }
 }
 
 //Exercise 4
